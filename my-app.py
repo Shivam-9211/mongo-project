@@ -3,8 +3,9 @@ from pymongo import MongoClient
 from datetime import datetime
 
 # --- MongoDB Connection Setup ---
-# Connect to local MongoDB instance
-MONGO_URI = "mongodb+srv://tomcr00ze:Shiv@m9211@cluster-aj.oen2mzu.mongodb.net/?appName=Cluster-AJ"
+# --- MongoDB Connection Setup ---
+# Edited to encode the '@' in the password to '%40'
+MONGO_URI = "mongodb+srv://tomcr00ze:Shiv%40m9211@cluster-aj.oen2mzu.mongodb.net/?appName=Cluster-AJ"
 client = MongoClient(MONGO_URI)
 db = client['streamlit_todo_app']
 users_collection = db['users']
