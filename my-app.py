@@ -4,7 +4,7 @@ from datetime import datetime
 
 # --- MongoDB Connection Setup ---
 # Connect to local MongoDB instance
-MONGO_URI = "mongodb://localhost:27017/"
+MONGO_URI = "mongodb+srv://tomcr00ze:Shiv@m9211@cluster-aj.oen2mzu.mongodb.net/?appName=Cluster-AJ"
 client = MongoClient(MONGO_URI)
 db = client['streamlit_todo_app']
 users_collection = db['users']
